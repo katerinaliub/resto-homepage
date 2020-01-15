@@ -1,0 +1,10 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+
+@include font-face("WCManoNegraBta", "../assets/fonts/WCManoNegraBta/WCManoNegraBta", normal, normal);
+
+@include font-face("Aleo", "../assets/fonts/Aleo/regular/Aleo-Regular", normal, normal);
+@include font-face("Aleo", "../assets/fonts/Aleo/light/Aleo-Light", 300, normal);
+@include font-face("Aleo", "../assets/fonts/Aleo/lightItalic/Aleo-LightItalic", 300, italic);
+@include font-face("Aleo", "../assets/fonts/Aleo/bold/Aleo-Bold", bold, normal);
