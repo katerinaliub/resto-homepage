@@ -2,9 +2,6 @@
 @import "abstracts/mixins";
 @import "abstracts/variables";
 
+@import "base/base";
 @import "base/fonts";
-
-*{
-  font-family: $font-default;
-}
 
