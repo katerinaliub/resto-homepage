@@ -13,11 +13,19 @@
   margin-bottom: 2rem;
 }
 .u-margin-bottom-big {
-  margin-bottom: 8rem !important;
+  margin-bottom: $gutter-vertical-medium !important;
+
+  @include respond(tab-port) {
+    margin-bottom: $gutter-horizontal !important;
+  }
 }
 
 .u-margin-bottom-large {
   margin-bottom: $gutter-vertical-large;
+
+  @include respond(tab-port) {
+    margin-bottom: $gutter-vertical-medium;
+  }
 }
 
 .u-margin-top-negative {

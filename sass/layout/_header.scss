@@ -5,6 +5,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include respond(tab-port) {
+      min-height: 5rem;
+    }
   }
 
   &__logo {

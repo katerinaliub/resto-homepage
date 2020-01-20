@@ -4,10 +4,24 @@
     column-count: 2;
     column-gap: 10rem;
     margin-bottom: $gutter-horizontal;
+
+    @include respond(tab-port) {
+      column-count: 1;
+    }
   }
 
   &__item:not(:nth-child(4n)) {
     margin-bottom: $gutter-horizontal;
+
+    @include respond(tab-port) {
+      margin-bottom: $gutter-vertical-small;
+    }
+  }
+
+  &__item:not(:last-child) {
+    @include respond(tab-port) {
+      margin-bottom: $gutter-vertical-small;
+    }
   }
 
   &__caption {
@@ -22,19 +36,11 @@
     margin: 0 4rem 0 2rem;
   }
 
-  &__dish-title {
-
-  }
-
   &__dish-description {
     font-size: 1.2rem;
     font-style: italic;
     font-weight: 300;
     color: $color-grey-light;
     line-height: 1.4;
-  }
-
-  &__dish-price {
-
   }
 }

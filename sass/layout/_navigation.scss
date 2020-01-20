@@ -149,6 +149,11 @@
     position: fixed;
     right: 0;
     top: 25px;
+
+    @include respond(tab-port) {
+      right: 5%;
+      top: 0;
+    }
   }
 
   &__checkbox:checked + &__button &__icon {

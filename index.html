@@ -197,6 +197,99 @@
                                     <div class="stars" style="--rating: 5;"></div>
                                 </div>
                             </div>
+                            <div class="swiper-slide">
+                                <div class="featured-dish">
+                                    <img src="assets/img/img-featured-4.jpg" alt="Fugiat nulla sint" class="featured-dish__image">
+                                    <div class="featured-dish__caption">
+                                        <p class="featured-dish__title">Pim minim veniamt</p>
+                                        <span class="fetured-dish__price">$17</span>
+                                    </div>
+                                    <div class="stars" style="--rating: 4;"></div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="featured-dish">
+                                    <img src="assets/img/img-featured-1.jpg" alt="Fugiat nulla sint" class="featured-dish__image">
+                                    <div class="featured-dish__caption">
+                                        <p class="featured-dish__title">Fugiat nulla sint</p>
+                                        <span class="fetured-dish__price">$30</span>
+                                    </div>
+                                    <div class="stars" style="--rating: 2.5;"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="featured-dish">
+                                    <img src="assets/img/img-featured-2.jpg" alt="Fugiat nulla sint" class="featured-dish__image">
+                                    <div class="featured-dish__caption">
+                                        <p class="featured-dish__title">Daute irure dolor</p>
+                                        <span class="fetured-dish__price">$24</span>
+                                    </div>
+                                    <div class="stars" style="--rating: 3;"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="featured-dish">
+                                    <img src="assets/img/img-featured-3.jpg" alt="Fugiat nulla sint" class="featured-dish__image">
+                                    <div class="featured-dish__caption">
+                                        <p class="featured-dish__title">Officia deserunt mollit</p>
+                                        <span class="fetured-dish__price">$60</span>
+                                    </div>
+                                    <div class="stars" style="--rating: 5;"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="featured-dish">
+                                    <img src="assets/img/img-featured-4.jpg" alt="Fugiat nulla sint" class="featured-dish__image">
+                                    <div class="featured-dish__caption">
+                                        <p class="featured-dish__title">Pim minim veniamt</p>
+                                        <span class="fetured-dish__price">$17</span>
+                                    </div>
+                                    <div class="stars" style="--rating: 4;"></div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="featured-dish">
+                                    <img src="assets/img/img-featured-1.jpg" alt="Fugiat nulla sint" class="featured-dish__image">
+                                    <div class="featured-dish__caption">
+                                        <p class="featured-dish__title">Fugiat nulla sint</p>
+                                        <span class="fetured-dish__price">$30</span>
+                                    </div>
+                                    <div class="stars" style="--rating: 2.5;"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="featured-dish">
+                                    <img src="assets/img/img-featured-2.jpg" alt="Fugiat nulla sint" class="featured-dish__image">
+                                    <div class="featured-dish__caption">
+                                        <p class="featured-dish__title">Daute irure dolor</p>
+                                        <span class="fetured-dish__price">$24</span>
+                                    </div>
+                                    <div class="stars" style="--rating: 3;"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="featured-dish">
+                                    <img src="assets/img/img-featured-3.jpg" alt="Fugiat nulla sint" class="featured-dish__image">
+                                    <div class="featured-dish__caption">
+                                        <p class="featured-dish__title">Officia deserunt mollit</p>
+                                        <span class="fetured-dish__price">$60</span>
+                                    </div>
+                                    <div class="stars" style="--rating: 5;"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="featured-dish">
+                                    <img src="assets/img/img-featured-4.jpg" alt="Fugiat nulla sint" class="featured-dish__image">
+                                    <div class="featured-dish__caption">
+                                        <p class="featured-dish__title">Pim minim veniamt</p>
+                                        <span class="fetured-dish__price">$17</span>
+                                    </div>
+                                    <div class="stars" style="--rating: 4;"></div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -272,13 +365,26 @@
         <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
         <script>
              new Swiper('.swiper-container', {
-                slidesPerView: 4,
-                spaceBetween: 60,
+                slidesPerView: 2,
+                slidesPerGroup: 2,
+                spaceBetween: 30,
                 freeMode: true,
+                loop: true,
+                autoplay: {
+                     delay: 2500,
+                     disableOnInteraction: false,
+                },
                 pagination: {
                     el: '.swiper-pagination',
                     clickable: true,
                 },
+                breakpoints: {
+                    901: {
+                        slidesPerGroup: 4,
+                        slidesPerView: 4,
+                        spaceBetween: 60,
+                    },
+                }
             });
         </script>
     </body>

@@ -3,6 +3,11 @@
   background-color: $color-grey-dark;
   color: $color-white;
 
+  @include respond(tab-port) {
+    padding: $gutter-vertical-small 0;
+    text-align: center;
+  }
+
   &__address {
     font-weight: 300;
     font-style: normal;
@@ -33,6 +38,8 @@
 
   &__logo {
     display: block;
+    @include respond(tab-port) {
+      margin: 0 auto $gutter-vertical-small;
+    }
   }
-
 }
