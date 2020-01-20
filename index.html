@@ -5,11 +5,275 @@
         <meta name="viewport"
             content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
         <link rel="stylesheet" href="css/style.css">
 
         <title>Resto | Restaurant Home Page</title>
     </head>
     <body>
-        <p>Resto App</p>
+        <header class="header">
+            <div class="row">
+                <div class="header__content">
+                    <img src="assets/img/logo.png" alt="Logo" class="header__logo">
+                    <nav class="navigation">
+                        <ul class="navigation__list">
+                            <li class="navigation__item"><a href="#" class="navigation__link">Our Story</a></li>
+                            <li class="navigation__item"><a href="#" class="navigation__link">Menu</a></li>
+                            <li class="navigation__item"><a href="#" class="navigation__link">Reservations</a></li>
+                            <li class="navigation__item"><a href="#" class="navigation__link">News</a></li>
+                            <li class="navigation__item"><a href="#" class="navigation__link">Reviews</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="u-margin-bottom-large">
+            <section class="section-billboard">
+                <div class="u-center-block u-center-text">
+                    <h1 class="heading-1">This Template Is Awesome</h1>
+                    <h4 class="heading-4">resto restaurant homepage website template</h4>
+                </div>
+            </section>
+            <section class="section-menu u-margin-bottom-large">
+                <div class="u-center-text u-margin-top-negative u-margin-bottom-big">
+                    <h3 class="heading-3">The Menu</h3>
+                </div>
+                <div class="row">
+                    <div class="menu">
+                        <div class="menu__loaded u-margin-bottom-big">
+                            <div class="menu__item">
+                                <div class="menu__caption">
+                                    <p class="menu__dish-name">Voluptate cillum fugiat.</p>
+                                    <div class="menu__line"></div>
+                                    <span class="menu__dish-price">$50</span>
+                                </div>
+                                <p class="menu__dish-description">Cheese, tomato, mushrooms, onions.</p>
+                            </div>
+                            <div class="menu__item">
+                                <div class="menu__caption">
+                                    <p class="menu__dish-name">Metus varius laoreet.</p>
+                                    <div class="menu__line"></div>
+                                    <span class="menu__dish-price">$62</span>
+                                </div>
+                                <p class="menu__dish-description">Chicken, mozzarella cheese, onions.</p>
+                            </div>
+                            <div class="menu__item">
+                                <div class="menu__caption">
+                                    <p class="menu__dish-name">Donec sodales magna.</p>
+                                    <div class="menu__line"></div>
+                                    <span class="menu__dish-price">$25</span>
+                                </div>
+                                <p class="menu__dish-description">Tuna, Sweetcorn, Cheese.</p>
+                            </div>
+                            <div class="menu__item">
+                                <div class="menu__caption">
+                                    <p class="menu__dish-name">Saugue velit cursus.</p>
+                                    <div class="menu__line"></div>
+                                    <span class="menu__dish-price">$30</span>
+                                </div>
+                                <p class="menu__dish-description">Pineapple, Minced Beef, Cheese.</p>
+                            </div>
+                            <div class="menu__item">
+                                <div class="menu__caption">
+                                    <p class="menu__dish-name">Arcu pede enim justo.</p>
+                                    <div class="menu__line"></div>
+                                    <span class="menu__dish-price">$45</span>
+                                </div>
+                                <p class="menu__dish-description">Tuna, Sweetcorn, Cheese.</p>
+                            </div>
+                            <div class="menu__item">
+                                <div class="menu__caption">
+                                    <p class="menu__dish-name">Cras dapibussemper nisi.</p>
+                                    <div class="menu__line"></div>
+                                    <span class="menu__dish-price">$32</span>
+                                </div>
+                                <p class="menu__dish-description">Pineapple, Minced Beef, Cheese.</p>
+                            </div>
+                            <div class="menu__item">
+                                <div class="menu__caption">
+                                    <p class="menu__dish-name">Quam semper libero.</p>
+                                    <div class="menu__line"></div>
+                                    <span class="menu__dish-price">$15</span>
+                                </div>
+                                <p class="menu__dish-description">Cheese, tomato, mushrooms, onions.</p>
+                            </div>
+                            <div class="menu__item">
+                                <div class="menu__caption">
+                                    <p class="menu__dish-name">Nam eget dui Etiam.</p>
+                                    <div class="menu__line"></div>
+                                    <span class="menu__dish-price">$35</span>
+                                </div>
+                                <p class="menu__dish-description">Chicken, mozzarella cheese, onions.</p>
+                            </div>
+                        </div>
+                        <div class="u-center-text">
+                            <button class="btn btn--more">load more &nbsp;&nbsp; | &nbsp;&nbsp; <i class="arrow arrow--down"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-featured u-margin-bottom-large">
+                <div class="row">
+                    <h2 class="heading-2 u-block-overlap">Featured Dishes</h2>
+
+                    <div class="swiper-container swiper-featured">
+                        <div class="swiper-pagination swiper-featured__pag--above"></div>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="featured-dish">
+                                    <img src="assets/img/img-featured-1.jpg" alt="Fugiat nulla sint" class="featured-dish__image">
+                                    <div class="featured-dish__caption">
+                                        <p class="featured-dish__title">Fugiat nulla sint</p>
+                                        <span class="fetured-dish__price">$30</span>
+                                    </div>
+                                    <div class="stars" style="--rating: 2.5;"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="featured-dish">
+                                    <img src="assets/img/img-featured-2.jpg" alt="Fugiat nulla sint" class="featured-dish__image">
+                                    <div class="featured-dish__caption">
+                                        <p class="featured-dish__title">Daute irure dolor</p>
+                                        <span class="fetured-dish__price">$24</span>
+                                    </div>
+                                    <div class="stars" style="--rating: 3;"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="featured-dish">
+                                    <img src="assets/img/img-featured-3.jpg" alt="Fugiat nulla sint" class="featured-dish__image">
+                                    <div class="featured-dish__caption">
+                                        <p class="featured-dish__title">Officia deserunt mollit</p>
+                                        <span class="fetured-dish__price">$60</span>
+                                    </div>
+                                    <div class="stars" style="--rating: 5;"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="featured-dish">
+                                    <img src="assets/img/img-featured-4.jpg" alt="Fugiat nulla sint" class="featured-dish__image">
+                                    <div class="featured-dish__caption">
+                                        <p class="featured-dish__title">Pim minim veniamt</p>
+                                        <span class="fetured-dish__price">$17</span>
+                                    </div>
+                                    <div class="stars" style="--rating: 4;"></div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="featured-dish">
+                                    <img src="assets/img/img-featured-1.jpg" alt="Fugiat nulla sint" class="featured-dish__image">
+                                    <div class="featured-dish__caption">
+                                        <p class="featured-dish__title">Fugiat nulla sint</p>
+                                        <span class="fetured-dish__price">$30</span>
+                                    </div>
+                                    <div class="stars" style="--rating: 2.5;"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="featured-dish">
+                                    <img src="assets/img/img-featured-2.jpg" alt="Fugiat nulla sint" class="featured-dish__image">
+                                    <div class="featured-dish__caption">
+                                        <p class="featured-dish__title">Daute irure dolor</p>
+                                        <span class="fetured-dish__price">$24</span>
+                                    </div>
+                                    <div class="stars" style="--rating: 3;"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="featured-dish">
+                                    <img src="assets/img/img-featured-3.jpg" alt="Fugiat nulla sint" class="featured-dish__image">
+                                    <div class="featured-dish__caption">
+                                        <p class="featured-dish__title">Officia deserunt mollit</p>
+                                        <span class="fetured-dish__price">$60</span>
+                                    </div>
+                                    <div class="stars" style="--rating: 5;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-gallery">
+                <div class="row">
+                    <h2 class="heading-2 u-margin-bottom-big">The Gallery</h2>
+                    <div class="gallery">
+                        <a href="#" class="gallery__item gallery__item--1">
+                            <img src="assets/img/img-gallery-1.jpg" alt="Gallery 1" class="gallery__img">
+                        </a>
+                        <a href="#" class="gallery__item gallery__item--2">
+                            <img src="assets/img/img-gallery-2.jpg" alt="Gallery 2" class="gallery__img">
+                        </a>
+                        <a href="#" class="gallery__item gallery__item--3">
+                            <img src="assets/img/img-gallery-3.jpg" alt="Gallery 3" class="gallery__img">
+                        </a>
+                        <a href="#" class="gallery__item gallery__item--4">
+                            <img src="assets/img/img-gallery-4.jpg" alt="Gallery 4" class="gallery__img">
+                        </a>
+                        <a href="#" class="gallery__item gallery__item--5">
+                            <img src="assets/img/img-gallery-5.jpg" alt="Gallery 5" class="gallery__img">
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="row">
+                <div class="col-1-of-4">
+                    New York Restaurant
+                    <address class="footer__address">
+                        3926 Anmoore Road <br/>
+                        New York, NY 10014
+                    </address>
+                    718-749-1714
+                </div>
+                <div class="col-1-of-4">
+                    France Restaurant
+                    <address class="footer__address">
+                    68, rue  de la Couronne <br/>
+                    75002 PARIS
+                    </address>
+                    02.94.23.69.56
+                </div>
+                <div class="col-1-of-4">
+                    <ul class="footer__nav">
+                        <li class="footer__nav__item">
+                            <a href="#" class="footer__nav__link">Blog</a>
+                        </li>
+                        <li class="footer__nav__item">
+                            <a href="#" class="footer__nav__link">Careers</a>
+                        </li>
+                        <li class="footer__nav__item">
+                            <a href="#" class="footer__nav__link">Privacy Policy</a>
+                        </li>
+                        <li class="footer__nav__item">
+                            <a href="#" class="footer__nav__link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-1-of-4">
+                    <img src="assets/img/logo-light.png" alt="" class="footer__logo u-margin-bottom-small">
+                    <span class="u-font-light">
+                        &copy; All Rights Reserved 2014.
+                        Find  More at
+                    </span>
+                    Pixelhint.com
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+        <script>
+             new Swiper('.swiper-container', {
+                slidesPerView: 4,
+                spaceBetween: 60,
+                freeMode: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+            });
+        </script>
     </body>
 </html>

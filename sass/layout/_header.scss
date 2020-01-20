@@ -1,0 +1,13 @@
+.header {
+
+  &__content {
+    min-height: 11rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    height: 3rem;
+  }
+}

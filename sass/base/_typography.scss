@@ -1,3 +1,75 @@
 body {
-  font-family: $font-default;
+  font-family: $default-font;
+  font-size: $default-font-size;
+  font-weight: 400;
+  line-height: 1.7;
+  color: $color-grey-dark-3;
+}
+
+.heading-1 {
+  color: $color-white;
+  font-family: $font-helper;
+  font-size: $large-font-size;
+  font-weight: 400;
+  letter-spacing: -1rem;
+  line-height: 1.4;
+}
+
+.heading-2 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: $color-grey-dark;
+
+  &:after {
+    content: "";
+    display: block;
+    width: 200px;
+    border-bottom: 1px solid $color-grey-light-2;
+    margin-left: 2rem;
+  }
+}
+
+.heading-3 {
+  display: inline-block;
+  color: $color-white;
+  font-size: 2rem;
+  font-weight: normal;
+  padding: 1.2rem 3rem 2.4rem;
+  background-color: $color-red;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 85%, 0 100%);
+}
+
+.heading-4 {
+  color: $color-white;
+  font-weight: normal;
+  font-size: 1.6rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  $line-width: 4rem;
+
+  &:before,
+  &:after {
+    display: block;
+    content: "";
+    width: $line-width;
+    border-bottom: 1px solid $color-white;
+    margin-top: .4rem;
+  }
+
+  &:before {
+    left: -$line-width;
+    margin-right: $line-width;
+  }
+
+  &:after {
+    right: -$line-width;
+    margin-left: $line-width;
+  }
 }

@@ -5,17 +5,26 @@
 
 //font
 $default-font: "Aleo", sans-serif !default;
+$font-helper: "WCManoNegraBta", "Aleo", sans-serif !default;
 $default-font-size: 1.6rem;
+$large-font-size: 10rem;
 
 //color
 $color-grey-dark: #3b3b3b;
-$color-grey-dark-2: #555;
+$color-grey-dark-2: #3f3f3f;
+$color-grey-dark-3: #555;
 
 $color-grey-light: #b7b7b7;
 $color-grey-light-2: #ececec;
+$color-grey-light-3: #dedede;
 
 $color-white: #fff;
 
 $color-red: #f34949;
 
 $color-yellow: #f1df1a;
+
+//grid
+$grid-width: 110rem;
+$gutter-vertical-large: 20rem;
+$gutter-horizontal: 6rem;

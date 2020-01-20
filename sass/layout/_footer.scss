@@ -1,0 +1,38 @@
+.footer {
+  padding: 10rem 0;
+  background-color: $color-grey-dark;
+  color: $color-white;
+
+  &__address {
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  &__nav {
+    list-style: none;
+
+    &__link {
+      &:link,
+      &:visited {
+        color: $color-white;
+        text-decoration: none;
+        transition: all .2s;
+      }
+
+      &:active,
+      &:hover {
+        color: $color-red;
+        transform: translateY(-.4rem);
+      }
+    }
+
+    &__item:not(:last-child) {
+      margin-bottom: 3px;
+    }
+  }
+
+  &__logo {
+    display: block;
+  }
+
+}

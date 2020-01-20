@@ -1,0 +1,13 @@
+.stars {
+  $percent: calc(var(--rating) / 5 * 100%);
+  display: inline-block;
+  font-size: 1.2rem;
+  line-height: 1;
+
+  &::after {
+    content: '★\00a0\00a0\00a0★\00a0\00a0\00a0★\00a0\00a0\00a0★\00a0\00a0\00a0★';
+    background: linear-gradient(90deg, $color-yellow $percent, $color-grey-light-3 $percent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

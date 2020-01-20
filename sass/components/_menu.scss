@@ -1,0 +1,40 @@
+.menu {
+
+  &__loaded {
+    column-count: 2;
+    column-gap: 10rem;
+    margin-bottom: $gutter-horizontal;
+  }
+
+  &__item:not(:nth-child(4n)) {
+    margin-bottom: $gutter-horizontal;
+  }
+
+  &__caption {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__line {
+    flex: 1;
+    border-bottom: 1px solid $color-grey-light-2;
+    margin: 0 4rem 0 2rem;
+  }
+
+  &__dish-title {
+
+  }
+
+  &__dish-description {
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: 300;
+    color: $color-grey-light;
+    line-height: 1.4;
+  }
+
+  &__dish-price {
+
+  }
+}
