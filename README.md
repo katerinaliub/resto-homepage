@@ -7,6 +7,8 @@ Project is created with:
 * HTML5
 * SASS version: ^4.13.0
 * Swiper version: 5.3.0
+* BEM methodology
+* 7-1 pattern
 
 ## Setup
 To run this project, install it locally using npm:
